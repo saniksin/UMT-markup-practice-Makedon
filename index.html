@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="./images/Company-logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#advantages">Переваги</a></li>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <button type="button">Замовити</button>
+    </header>
+    <main>
+      <section id="hero">
+        <h1>Відчуйте неперевершене тепло та стиль</h1>
+        <p>
+          Наші печі та каміни створені для вашого комфорту. Вони поєднують
+          елегантний дизайн з високою ефективністю.
+        </p>
+        <button type="button">Замовити</button>
+        <button type="button">Детальніше</button>
+      </section>
+
+      <section id="about">
+        <img
+          src="./images/fireplace-socks-hearth-cozy.jpg"
+          alt="fireplace-socks"
+        />
+        <h2>Ваші експерти у обігріві</h2>
+        <p>
+          Майстер печей спеціалізується на виробництві високоякісних печей та
+          камінів. Ми пишаємося своєю майстерністю та прагнемо забезпечити
+          максимальний комфорт для наших клієнтів.
+        </p>
+      </section>
+
+      <section id="advantages">
+        <h2>Найкращі каміни та печі на ринку</h2>
+        <ul>
+          <li>
+            <svg><use href="./icons/view_comfy.svg"></use></svg>
+            <h3>Досвід та Майстерність</h3>
+            <svg><use href="./icons/chevron_down.svg"></use></svg>
+            <p>
+              Наші фахівці – це досвідчені майстри своєї справи. Кожен етап, від
+              вибору до монтажу, виконується з ювелірною точністю та глибоким
+              розумінням нюансів. Ми постійно вдосконалюємо знання, пропонуючи
+              лише найкращі рішення.
+            </p>
+          </li>
+          <li>
+            <svg><use href="./icons/eco.svg"></use></svg>
+            <h3>Широкий Асортимент</h3>
+            <svg><use href="./icons/chevron_down.svg"></use></svg>
+            <p>
+              У нас ви знайдете ідеальне рішення для будь-якого інтер'єру та
+              бюджету: сучасні печі, класичні каміни, енергоефективні моделі та
+              всі необхідні аксесуари. Ми ретельно відбираємо постачальників,
+              гарантуючи якість кожного продукту.
+            </p>
+          </li>
+          <li>
+            <svg><use href="./icons/floor_lamp.svg"></use></svg>
+            <h3>Комплексний Сервіс</h3>
+            <svg><use href="./icons/chevron_down.svg"></use></svg>
+            <p>
+              Ми пропонуємо повний спектр послуг: професійна консультація,
+              індивідуальний підхід, кваліфікований та безпечний монтаж, а також
+              гарантійне й післягарантійне обслуговування. "Майстерня Печей" –
+              це ваш надійний партнер.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="catalog">
+        <h2>Каміни та печі</h2>
+        <p>Широкий асортимент печей та камінів на будь-який смак</p>
+        <label for="filter">Фільтр лейбл</label>
+        <select name="filter" id="filter">
+          <option value="all">Всі</option>
+          <option value="top">Топ</option>
+          <option value="standard">Стандарт</option>
+        </select>
+        <ul>
+          <li>
+            <img src="./images/Minimalist_photo.jpg" alt="Minimalist photo" />
+            <h4>Піч-камін "Теплий Дім"</h4>
+            <p>Класичний комфорт для вашої оселі.</p>
+            <p>8 900 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img src="./images/Ultra-minimalist.jpg" alt="Ultra minimalist" />
+            <h4>Сучасна піч "Мінімаліст"</h4>
+            <p>Елегантне тепло для сучасних інтер'єрів.</p>
+            <p>27 300 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Elegant_and_minimalist.jpg"
+              alt="Elegant and minimalist"
+            />
+            <h4>Камін "Гранд"</h4>
+            <p>Велич та затишок у вашій вітальні.</p>
+            <p>42 400 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Clean-industrial-style.jpg"
+              alt="Clean industrial style"
+            />
+            <h4>Пелетний котел " Плюс"</h4>
+            <p>Рішення для економного опалення.</p>
+            <p>33 000 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Minimalist-close-up.jpg"
+              alt="Minimalist close-up"
+            />
+            <h4>Чавунна піч "Надійний Жар"</h4>
+            <p>Довговічність та стабільне тепло на роки.</p>
+            <p>22 200 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Modern_and_minimalist_photo.jpg"
+              alt="Modern and minimalist photo"
+            />
+            <h4>Електричний камін "Миттєвий Затишок"</h4>
+            <p>Атмосфера справжнього вогню без зусиль.</p>
+            <p>31 800 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Architectural_minimalist_photo.jpg"
+              alt="Architectural minimalist photo"
+            />
+            <h4>Вбудований камін "Прихована Краса"</h4>
+            <p>Ідеальне поєднання дизайну та функціональності.</p>
+            <p>29 900 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Utilitarian_minimalist_photo.jpg"
+              alt="Utilitarian minimalist photo"
+            />
+            <h4>Піч-булерьян "Потужне Тепло"</h4>
+            <p>Швидкий обігрів великих приміщень.</p>
+            <p>18 900 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Artistic_minimalist_photo.jpg"
+              alt="Artistic minimalist photo"
+            />
+            <h4>Декоративний камін "Естетика Вогню"</h4>
+            <p>Створіть унікальний акцент у своєму інтер'єрі.</p>
+            <p>22 000 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Rustic_yet_minimalist_photo.jpg"
+              alt="Rustic yet minimalist photo"
+            />
+            <h4>Дров'яна піч "Традиція Тепла"</h4>
+            <p>Перевірений часом спосіб зігріти ваш дім.</p>
+            <p>15 000 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Minimalist_outdoor_photo.jpg"
+              alt="Minimalist outdoor photo"
+            />
+            <h4>Садова піч "Вечірні Вогні"</h4>
+            <p>Додайте шарму вашим посиденькам на свіжому повітрі.</p>
+            <p>13 500 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+          <li>
+            <img
+              src="./images/Minimalist_flat_lay.jpg"
+              alt="Minimalist flat lay"
+            />
+            <h4>Аксесуари для камінів "Досконалість у Деталях"</h4>
+            <p>Все для безпечної та комфортної експлуатації.</p>
+            <p>4 900 грн</p>
+            <button type="button">Детальніше</button>
+          </li>
+        </ul>
+        <button type="button">Показати ще</button>
+      </section>
+
+      <section id="reviews">
+        <h2>Що кажуть наші клієнти</h2>
+        <ul>
+          <li>
+            <ul>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+            </ul>
+
+            <p>
+              Ми довго шукали ідеальну піч для нашого заміського будинку, і
+              'Майстерня Печей' перевершила всі наші очікування! Від першої
+              консультації до фінального монтажу – все було на найвищому рівні.
+              Майстри працювали швидко, чисто та дуже професійно. Піч 'Теплий
+              Дім' не тільки чудово вписалася в інтер'єр, але й забезпечує
+              неймовірний затишок та ефективне тепло. Щиро вдячні за вашу
+              майстерність
+            </p>
+
+            <p>Олена Петренко, м. Львів</p>
+          </li>
+          <li>
+            <ul>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+              <li>
+                <svg><use href="./icons/star.svg"></use></svg>
+              </li>
+            </ul>
+
+            <p>
+              Я ціную якість та надійність, тому обрав 'Майстерню Печей' для
+              встановлення пелетного котла. Мене вразив широкий асортимент та
+              глибокі знання консультантів. Вони допомогли підібрати модель, яка
+              ідеально підійшла під мої потреби в енергоефективності. Монтаж був
+              виконаний бездоганно, всі терміни дотримані. Вже кілька місяців
+              котел працює бездоганно, а економія на опаленні – відчутна.
+              Рекомендую всім!
+            </p>
+
+            <p>Андрій Ковальчук, м. Київ</p>
+          </li>
+        </ul>
+
+        <button type="button">
+          <svg><use href="./icons/arrow-back.svg"></use></svg>
+        </button>
+        <button type="button">
+          <svg><use href="./icons/arrow-forward.svg"></use></svg>
+        </button>
+      </section>
+
+      <section id="gallery">
+        <h2>Галерея</h2>
+
+        <ul>
+          <li src="" alt=""></li>
+          <li src="" alt=""></li>
+          <li src="" alt=""></li>
+          <li src="" alt=""></li>
+          <li src="" alt=""></li>
+        </ul>
+      </section>
+
+      <section id="contacts">
+        <h2>Контакти</h2>
+        <ul>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <p>Електронна пошта</p>
+            <a href="mailto:info@warmthcomfort.com">info@warmthcomfort.com</a>
+          </li>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <p>Телефон</p>
+            <a href="tel:+1(555)123-4567">+1 (555) 123-4567</a>
+          </li>
+          <li>
+            <svg>
+              <use></use>
+            </svg>
+            <p>Магазин</p>
+            <address>
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/iVqrU66ruNxsXjhy5"
+                >вул. Гетьмана Мазепи 15, Львів</a
+              >
+            </address>
+          </li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.454461475915!2d24.029514092712116!3d49.87149155537097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adc55d7f8d7bd%3A0x8ce09dcb45e8e084!2zMTUsINCy0YPQu9C40YbRjyDQk9C10YLRjNC80LDQvdCwINCc0LDQt9C10L_QuCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNzkwMDA!5e0!3m2!1sru!2spl!4v1775748383356!5m2!1sru!2spl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Майстерня Печей. Усі права захищені.</p>
+    </footer>
+  </body>
+</html>
