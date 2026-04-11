@@ -1,0 +1,9 @@
+:root {
+    --primary-bg: #221D1D;
+    --primary-text: #FFFFFF;
+
+    /* Button */
+    --primary-button-bg: #CE4D46;
+    --primary-button-color: #A43D38;
+    --secondary-button-bg: #FFFFFF33;
+}

@@ -1,0 +1,115 @@
+@import "./reset.css";
+@import "./colors.css";
+@import "./fonts.css";
+
+body {
+    font-family: "Heebo", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+/* Shared */
+
+.text {
+    font-size: var(--medium);
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.section_title {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: var(--heading);
+    line-height: 120%;
+    letter-spacing: -1%;
+}
+
+.primary-icon {
+    color: var(--primary-text);
+    width: 24px;
+    height: 24px;
+}
+
+.large-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.icon-medium {
+    width: 32px;
+    height: 32px;
+}
+
+/* Header */
+
+.navigation-list {
+    font-size: 16px;
+}
+
+.order-button {
+    color: inherit;
+    font-weight: 500;
+    font-size: var(--regular);
+    padding: 8px 20px;
+    background-color: var(--primary-button-bg);
+    border-top-width: 1.5px;
+    border-right-width: 1.5px;
+    border-left-width: 1.5px;
+    border-bottom-width: 4px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: var(--primary-button-color);
+}
+
+/* Hero section */
+
+.hero-title {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 500;
+    font-size: var(--hero-title);
+    line-height: 120%;
+    letter-spacing: -1%;
+}
+
+.order-button__big {
+    padding: 10px 24px;;
+}
+
+.more-button {
+    color: inherit;
+    font-weight: 500;
+    font-size: var(--regular);
+    padding: 10px 24px;
+    background-color: transparent;
+    border-top-width: 1.5px;
+    border-right-width: 1.5px;
+    border-left-width: 1.5px;
+    border-bottom-width: 4px;
+    border-radius: 6px;
+    border-style: solid;
+    border-color: var(--secondary-button-bg);
+}
+
+/* About section */
+
+.about-image {
+    width: 644px;
+    height: 485px;
+}
+
+/* Advantages section */
+
+.advantage-title {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: var(--advantages-title);
+    line-height: 130%;
+    letter-spacing: -1%;
+}
+
+.advantage-subtitle {
+    font-size: var(--regular);
+}
