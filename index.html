@@ -23,357 +23,440 @@
 		<link rel="stylesheet" href="./styles/styles.css" />
 	</head>
 	<body>
-		<header>
-			<nav>
-				<a href="#">
-					<svg width="150" height="48">
-						<use href="./icons/icon-logo.svg"></use>
-					</svg>
-				</a>
-				<ul class="navigation-list">
-					<li><a href="#about">Про нас</a></li>
-					<li><a href="#advantages">Переваги</a></li>
-					<li><a href="#catalog">Каталог</a></li>
-					<li><a href="#reviews">Відгуки</a></li>
-					<li><a href="#gallery">Галерея</a></li>
-					<li><a href="#contacts">Контакти</a></li>
-				</ul>
-			</nav>
-			<button type="button" class="order-button">Замовити</button>
+		<header class="header">
+			<div class="container">
+				<nav class="navigation">
+					<a href="#">
+						<svg class="icon-logo">
+							<use href="./icons/sprite.svg#icon-logo"></use>
+						</svg>
+					</a>
+					<ul class="navigation-list">
+						<li><a href="#about" class="navigation-list-link">Про нас</a></li>
+						<li><a href="#advantages" class="navigation-list-link">Переваги</a></li>
+						<li><a href="#catalog" class="navigation-list-link">Каталог</a></li>
+						<li><a href="#reviews" class="navigation-list-link">Відгуки</a></li>
+						<li><a href="#gallery" class="navigation-list-link">Галерея</a></li>
+						<li><a href="#contacts" class="navigation-list-link">Контакти</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="order-button">Замовити</button>
+			</div>
 		</header>
+
 		<main>
-			<section id="hero">
-				<h1 class="hero-title">Відчуйте неперевершене тепло та стиль</h1>
-				<p class="text">
-					Наші печі та каміни створені для вашого комфорту. Вони поєднують елегантний дизайн з високою ефективністю.
-				</p>
-				<button type="button" class="order-button order-button__big">Замовити</button>
-				<button type="button" class="more-button">Детальніше</button>
+			<section id="hero" class="hero-section">
+				<div class="container">
+					<h1 class="hero-title">Відчуйте неперевершене тепло та стиль</h1>
+					<p class="text hero-text">
+						Наші печі та каміни створені для вашого комфорту. Вони поєднують елегантний дизайн з високою ефективністю.
+					</p>
+					<div class="hero-buttons">
+						<button type="button" class="order-button order-button__big">Замовити</button>
+						<button type="button" class="more-button">Детальніше</button>
+					</div>
+				</div>
 			</section>
 
-			<section id="about">
-				<img class="about-image" src="./images/fireplace-cozy.jpg" alt="Затишний камін" />
-				<h2 class="section_title">Ваші експерти у обігріві</h2>
-				<p class="text">
-					Майстер печей спеціалізується на виробництві високоякісних печей та камінів. Ми пишаємося своєю майстерністю
-					та прагнемо забезпечити максимальний комфорт для наших клієнтів.
-				</p>
-			</section>
-
-			<section id="advantages">
-				<h2 class="section_title">Найкращі каміни та печі на ринку</h2>
-				<ul>
-					<li>
-						<svg class="primary-icon large-icon">
-							<use href="./icons/sprite.svg#view_comfy"></use>
-						</svg>
-						<h3 class="advantage-title">Досвід та Майстерність</h3>
-						<svg class="primary-icon icon-medium">
-							<use href="./icons/sprite.svg#chevron_down"></use>
-						</svg>
-						<p class="advantage-subtitle">
-							Наші фахівці – це досвідчені майстри своєї справи. Кожен етап, від вибору до монтажу, виконується з
-							ювелірною точністю та глибоким розумінням нюансів. Ми постійно вдосконалюємо знання, пропонуючи лише
-							найкращі рішення.
+			<section id="about" class="section-wrapper">
+				<div class="container">
+					<img class="about-image" src="./images/fireplace-cozy.jpg" alt="Затишний камін" />
+					<div class="about-description">
+						<h2 class="section-title about-section-title">Ваші експерти у обігріві</h2>
+						<p class="text">
+							Майстер печей спеціалізується на виробництві високоякісних печей та камінів. Ми пишаємося своєю
+							майстерністю та прагнемо забезпечити максимальний комфорт для наших клієнтів.
 						</p>
-					</li>
-					<li>
-						<svg class="primary-icon large-icon">
-							<use href="./icons/sprite.svg#eco"></use>
-						</svg>
-						<h3 class="advantage-title">Широкий Асортимент</h3>
-						<svg class="primary-icon icon-medium">
-							<use href="./icons/sprite.svg#chevron_down"></use>
-						</svg>
-						<p class="advantage-subtitle">
-							У нас ви знайдете ідеальне рішення для будь-якого інтер'єру та бюджету: сучасні печі, класичні каміни,
-							енергоефективні моделі та всі необхідні аксесуари. Ми ретельно відбираємо постачальників, гарантуючи
-							якість кожного продукту.
-						</p>
-					</li>
-					<li>
-						<svg class="primary-icon large-icon">
-							<use href="./icons/sprite.svg#floor_lamp"></use>
-						</svg>
-						<h3 class="advantage-title">Комплексний Сервіс</h3>
-						<svg class="primary-icon icon-medium">
-							<use href="./icons/sprite.svg#chevron_down"></use>
-						</svg>
-						<p>
-							Ми пропонуємо повний спектр послуг: професійна консультація, індивідуальний підхід, кваліфікований та
-							безпечний монтаж, а також гарантійне й післягарантійне обслуговування. "Майстерня Печей" – це ваш надійний
-							партнер.
-						</p>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</section>
 
-			<section id="catalog">
-				<h2 class="section_title">Каміни та печі</h2>
-				<p class="text">Широкий асортимент печей та камінів на будь-який смак</p>
-				<label for="filter">Фільтр лейбл</label>
-				<select name="filter" id="filter">
-					<option value="all">Всі</option>
-					<option value="top">Топ</option>
-					<option value="standard">Стандарт</option>
-				</select>
-				<ul>
-					<li>
-						<img src="./images/warm-home-stove.jpg" alt="Піч-камін Теплий Дім" />
-						<h4>Піч-камін "Теплий Дім"</h4>
-						<p>Класичний комфорт для вашої оселі.</p>
-						<p>8 900 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/minimalist-stove.jpg" alt="Сучасна піч Мінімаліст" />
-						<h4>Сучасна піч "Мінімаліст"</h4>
-						<p>Елегантне тепло для сучасних інтер'єрів.</p>
-						<p>27 300 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/grand-fireplace.jpg" alt="Elegant and minimalist" />
-						<h4>Камін "Гранд"</h4>
-						<p>Велич та затишок у вашій вітальні.</p>
-						<p>42 400 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/pellet-boiler.jpg" alt="Пелетний котел" />
-						<h4>Пелетний котел " Плюс"</h4>
-						<p>Рішення для економного опалення.</p>
-						<p>33 000 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/cast-iron-stove.jpg" alt="Чавунна піч" />
-						<h4>Чавунна піч "Надійний Жар"</h4>
-						<p>Довговічність та стабільне тепло на роки.</p>
-						<p>22 200 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/electric-fireplace.jpg" alt="Електричний камін" />
-						<h4>Електричний камін "Миттєвий Затишок"</h4>
-						<p>Атмосфера справжнього вогню без зусиль.</p>
-						<p>31 800 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/built-in-fireplace.jpg" alt="Вбудований камін" />
-						<h4>Вбудований камін "Прихована Краса"</h4>
-						<p>Ідеальне поєднання дизайну та функціональності.</p>
-						<p>29 900 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/bullerjan-stove.jpg" alt="Піч-булерьян" />
-						<h4>Піч-булерьян "Потужне Тепло"</h4>
-						<p>Швидкий обігрів великих приміщень.</p>
-						<p>18 900 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/decorative-fireplace.jpg" alt="Декоративний камін" />
-						<h4>Декоративний камін "Естетика Вогню"</h4>
-						<p>Створіть унікальний акцент у своєму інтер'єрі.</p>
-						<p>22 000 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/wood-stove.jpg" alt="Дров'яна піч" />
-						<h4>Дров'яна піч "Традиція Тепла"</h4>
-						<p>Перевірений часом спосіб зігріти ваш дім.</p>
-						<p>15 000 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/garden-stove.jpg" alt="Садова піч" />
-						<h4>Садова піч "Вечірні Вогні"</h4>
-						<p>Додайте шарму вашим посиденькам на свіжому повітрі.</p>
-						<p>13 500 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-					<li>
-						<img src="./images/fireplace-accessories.jpg" alt="Аксесуари для камінів" />
-						<h4>Аксесуари для камінів "Досконалість у Деталях"</h4>
-						<p>Все для безпечної та комфортної експлуатації.</p>
-						<p>4 900 грн</p>
-						<button type="button">Детальніше</button>
-					</li>
-				</ul>
-				<button type="button">Показати ще</button>
+			<section id="advantages" class="section-wrapper">
+				<div class="container">
+					<h2 class="section-title advantages-section-title">Найкращі каміни та печі на ринку</h2>
+					<ul class="addvantages-list">
+						<li class="advantages-list-item">
+							<svg class="primary-icon large-icon">
+								<use href="./icons/sprite.svg#view_comfy"></use>
+							</svg>
+							<div class="advantage-collapsible-block">
+								<h3 class="advantage-title">Досвід та Майстерність</h3>
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#chevron_down"></use>
+								</svg>
+							</div>
+							<!-- <p class="advantage-subtitle">
+								Наші фахівці – це досвідчені майстри своєї справи. Кожен етап, від вибору до монтажу, виконується з
+								ювелірною точністю та глибоким розумінням нюансів. Ми постійно вдосконалюємо знання, пропонуючи лише
+								найкращі рішення.
+							</p> -->
+						</li>
+						<li class="advantages-list-item">
+							<svg class="primary-icon large-icon">
+								<use href="./icons/sprite.svg#eco"></use>
+							</svg>
+							<div class="advantage-collapsible-block">
+								<h3 class="advantage-title">Широкий Асортимент</h3>
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#chevron_down"></use>
+								</svg>
+							</div>
+							<!-- <p class="advantage-subtitle">
+								У нас ви знайдете ідеальне рішення для будь-якого інтер'єру та бюджету: сучасні печі, класичні каміни,
+								енергоефективні моделі та всі необхідні аксесуари. Ми ретельно відбираємо постачальників, гарантуючи
+								якість кожного продукту.
+							</p> -->
+						</li>
+						<li class="advantages-list-item">
+							<svg class="primary-icon large-icon">
+								<use href="./icons/sprite.svg#floor_lamp"></use>
+							</svg>
+							<div class="advantage-collapsible-block">
+								<h3 class="advantage-title">Комплексний Сервіс</h3>
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#chevron_down"></use>
+								</svg>
+							</div>
+							<!-- <p class="advantage-subtitle">
+								Ми пропонуємо повний спектр послуг: професійна консультація, індивідуальний підхід, кваліфікований та
+								безпечний монтаж, а також гарантійне й післягарантійне обслуговування. "Майстерня Печей" – це ваш
+								надійний партнер.
+							</p> -->
+						</li>
+					</ul>
+				</div>
 			</section>
 
-			<section id="reviews">
-				<h2 class="section_title">Що кажуть наші клієнти</h2>
-				<ul>
-					<li>
-						<ul>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
+			<section id="catalog" class="section-wrapper">
+				<div class="container">
+					<div class="сatalog-description-header">
+						<div>
+							<h2 class="section-title catalog-title">Каміни та печі</h2>
+							<p class="text">Широкий асортимент печей та камінів на будь-який смак</p>
+						</div>
+
+						<select name="filter" id="filter" class="select">
+							<option value="all">Всі</option>
+							<option value="top">Топ</option>
+							<option value="standard">Стандарт</option>
+						</select>
+					</div>
+					<ul class="catalog-list">
+						<li class="catalog-list-item">
+							<img src="./images/warm-home-stove.jpg" alt="Піч-камін Теплий Дім" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Піч-камін "Теплий Дім"</h3>
+							<p class="catalog-item-text">Класичний комфорт для вашої оселі.</p>
+							<p class="catalog-item-price">8 900 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/minimalist-stove.jpg" alt="Сучасна піч Мінімаліст" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Сучасна піч "Мінімаліст"</h3>
+							<p class="catalog-item-text">Елегантне тепло для сучасних інтер'єрів.</p>
+							<p class="catalog-item-price">27 300 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/grand-fireplace.jpg" alt="Elegant and minimalist" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Камін "Гранд"</h3>
+							<p class="catalog-item-text">Велич та затишок у вашій вітальні.</p>
+							<p class="catalog-item-price">42 400 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/pellet-boiler.jpg" alt="Пелетний котел" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Пелетний котел " Плюс"</h3>
+							<p class="catalog-item-text">Рішення для економного опалення.</p>
+							<p class="catalog-item-price">33 000 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/cast-iron-stove.jpg" alt="Чавунна піч" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Чавунна піч "Надійний Жар"</h3>
+							<p class="catalog-item-text">Довговічність та стабільне тепло на роки.</p>
+							<p class="catalog-item-price">22 200 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/electric-fireplace.jpg" alt="Електричний камін" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Електричний камін "Миттєвий Затишок"</h3>
+							<p class="catalog-item-text">Атмосфера справжнього вогню без зусиль.</p>
+							<p class="catalog-item-price">31 800 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/built-in-fireplace.jpg" alt="Вбудований камін" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Вбудований камін "Прихована Краса"</h3>
+							<p class="catalog-item-text">Ідеальне поєднання дизайну та функціональності.</p>
+							<p class="catalog-item-price">29 900 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/bullerjan-stove.jpg" alt="Піч-булерьян" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Піч-булерьян "Потужне Тепло"</h3>
+							<p class="catalog-item-text">Швидкий обігрів великих приміщень.</p>
+							<p class="catalog-item-price">18 900 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/decorative-fireplace.jpg" alt="Декоративний камін" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Декоративний камін "Естетика Вогню"</h3>
+							<p class="catalog-item-text">Створіть унікальний акцент у своєму інтер'єрі.</p>
+							<p class="catalog-item-price">22 000 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/wood-stove.jpg" alt="Дров'яна піч" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Дров'яна піч "Традиція Тепла"</h3>
+							<p class="catalog-item-text">Перевірений часом спосіб зігріти ваш дім.</p>
+							<p class="catalog-item-price">15 000 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/garden-stove.jpg" alt="Садова піч" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Садова піч "Вечірні Вогні"</h3>
+							<p class="catalog-item-text">Додайте шарму вашим посиденькам на свіжому повітрі.</p>
+							<p class="catalog-item-price">13 500 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+						<li class="catalog-list-item">
+							<img src="./images/fireplace-accessories.jpg" alt="Аксесуари для камінів" class="catalog-section-img" />
+							<h3 class="catalog-item-title">Аксесуари для камінів "Досконалість у Деталях"</h3>
+							<p class="catalog-item-text">Все для безпечної та комфортної експлуатації.</p>
+							<p class="catalog-item-price">4 900 грн</p>
+							<button type="button" class="more-button catalog-more-button">Детальніше</button>
+						</li>
+					</ul>
+					<button type="button" class="order-button order-button__big catalog-item-show-more-button">
+						Показати ще
+					</button>
+				</div>
+			</section>
+
+			<section id="reviews" class="section-wrapper">
+				<div class="container">
+					<h2 class="section-title feedback-section-title">Що кажуть наші клієнти</h2>
+					<ul class="feedback-list">
+						<li class="feedback-item">
+							<ul class="starts-list">
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__empty">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+							</ul>
+
+							<p class="text feedback-text">
+								Ми довго шукали ідеальну піч для нашого заміського будинку, і 'Майстерня Печей' перевершила всі наші
+								очікування! Від першої консультації до фінального монтажу – все було на найвищому рівні. Майстри
+								працювали швидко, чисто та дуже професійно. Піч 'Теплий Дім' не тільки чудово вписалася в інтер'єр, але
+								й забезпечує неймовірний затишок та ефективне тепло. Щиро вдячні за вашу майстерність
+							</p>
+
+							<p class="feedback-person-name">Олена Петренко, м. Львів</p>
+						</li>
+						<li class="feedback-item">
+							<ul class="starts-list start-item">
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+								<li class="start-item">
+									<svg class="feedback-star-icon feedback-star-icon__filled">
+										<use href="./icons/sprite.svg#star"></use>
+									</svg>
+								</li>
+							</ul>
+
+							<p class="text feedback-text">
+								Я ціную якість та надійність, тому обрав 'Майстерню Печей' для встановлення пелетного котла. Мене вразив
+								широкий асортимент та глибокі знання консультантів. Вони допомогли підібрати модель, яка ідеально
+								підійшла під мої потреби в енергоефективності. Монтаж був виконаний бездоганно, всі терміни дотримані.
+								Вже кілька місяців котел працює бездоганно, а економія на опаленні – відчутна. Рекомендую всім!
+							</p>
+
+							<p class="feedback-person-name">Андрій Ковальчук, м. Київ</p>
+						</li>
+					</ul>
+
+					<div class="feedback-navigation-block">
+						<button type="button" class="feedback-button">
+							<svg class="primary-icon"><use href="./icons/sprite.svg#arrow_back"></use></svg>
+						</button>
+						<button type="button" class="feedback-button">
+							<svg class="primary-icon"><use href="./icons/sprite.svg#arrow_forward"></use></svg>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="gallery" class="section-wrapper">
+				<div class="container">
+					<h2 class="section-title gallery-section-title">Галерея</h2>
+
+					<ul class="gallery-list">
+						<li>
+							<img
+								class="gallery-item-image"
+								src="./images/gallery/loft-fireplace-interior.jpg"
+								alt="Камін у лофт інтер'єрі"
+							/>
+						</li>
+						<li>
+							<img class="gallery-item-image" src="./images/gallery/fireplace-firewood.jpg" alt="Камін з дровами" />
+						</li>
+						<li>
+							<img
+								class="gallery-item-image"
+								src="./images/gallery/family-cozy-fireplace.jpg"
+								alt="Сім'я біля каміну"
+							/>
+						</li>
+						<li>
+							<img class="gallery-item-image" src="./images/gallery/tea-by-fireplace.jpg" alt="Чай біля каміну" />
+						</li>
+						<li>
+							<img
+								class="gallery-item-image"
+								src="./images/gallery/woman-dog-fireplace.jpg"
+								alt="Жінка з собакою біля каміну"
+							/>
+						</li>
+						<li>
+							<img
+								class="gallery-item-image"
+								src="./images/gallery/woman-reading-by-fireplace.jpg"
+								alt="Жінка читає книгу біля каміну"
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section id="contacts" class="section-wrapper">
+				<div class="container">
+					<h2 class="section-title contacts-title">Контакти</h2>
+
+					<div class="contacts-block">
+						<ul class="contacts-list">
+							<li class="contact-list-item">
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#mail"></use>
+								</svg>
+								<p class="contact-text">Електронна пошта</p>
+								<a class="contact-value contact-value__underline" href="mailto:info@warmthcomfort.com"
+									>info@warmthcomfort.com</a
+								>
 							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
+							<li class="contact-list-item">
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#call"></use>
+								</svg>
+								<p class="contact-text">Телефон</p>
+								<a class="contact-value contact-value__underline" href="tel:+1(555)123-4567">+1 (555) 123-4567</a>
 							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
+							<li class="contact-list-item">
+								<svg class="primary-icon icon-medium">
+									<use href="./icons/sprite.svg#location_on"></use>
+								</svg>
+								<p class="contact-text">Магазин</p>
+								<address>
+									<a class="contact-value" target="_blank" href="https://maps.app.goo.gl/iVqrU66ruNxsXjhy5"
+										>вул. Гетьмана Мазепи 15, Львів</a
+									>
+								</address>
 							</li>
 						</ul>
-
-						<p class="text">
-							Ми довго шукали ідеальну піч для нашого заміського будинку, і 'Майстерня Печей' перевершила всі наші
-							очікування! Від першої консультації до фінального монтажу – все було на найвищому рівні. Майстри працювали
-							швидко, чисто та дуже професійно. Піч 'Теплий Дім' не тільки чудово вписалася в інтер'єр, але й забезпечує
-							неймовірний затишок та ефективне тепло. Щиро вдячні за вашу майстерність
-						</p>
-
-						<p>Олена Петренко, м. Львів</p>
-					</li>
-					<li>
-						<ul>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-							<li>
-								<svg><use href="./icons/sprite.svg#star"></use></svg>
-							</li>
-						</ul>
-
-						<p class="text">
-							Я ціную якість та надійність, тому обрав 'Майстерню Печей' для встановлення пелетного котла. Мене вразив
-							широкий асортимент та глибокі знання консультантів. Вони допомогли підібрати модель, яка ідеально підійшла
-							під мої потреби в енергоефективності. Монтаж був виконаний бездоганно, всі терміни дотримані. Вже кілька
-							місяців котел працює бездоганно, а економія на опаленні – відчутна. Рекомендую всім!
-						</p>
-
-						<p>Андрій Ковальчук, м. Київ</p>
-					</li>
-				</ul>
-
-				<button type="button">
-					<svg class="primary-icon"><use href="./icons/sprite.svg#arrow_back"></use></svg>
-				</button>
-				<button type="button">
-					<svg class="primary-icon"><use href="./icons/sprite.svg#arrow_forward"></use></svg>
-				</button>
-			</section>
-
-			<section id="gallery">
-				<h2 class="section_title">Галерея</h2>
-
-				<ul>
-					<li>
-						<img src="./images/gallery/woman-reading-by-fireplace.jpg" alt="Жінка читає книгу біля каміну" />
-					</li>
-					<li>
-						<img src="./images/gallery/loft-fireplace-interior.jpg" alt="Камін у лофт інтер'єрі" />
-					</li>
-					<li>
-						<img src="./images/gallery/fireplace-firewood.jpg" alt="Камін з дровами" />
-					</li>
-					<li>
-						<img src="./images/gallery/family-cozy-fireplace.jpg" alt="Сім'я біля каміну" />
-					</li>
-					<li>
-						<img src="./images/gallery/tea-by-fireplace.jpg" alt="Чай біля каміну" />
-					</li>
-					<li>
-						<img src="./images/gallery/woman-dog-fireplace.jpg" alt="Жінка з собакою біля каміну" />
-					</li>
-				</ul>
-			</section>
-
-			<section id="contacts">
-				<h2 class="section_title">Контакти</h2>
-				<ul>
-					<li>
-						<svg class="icon-medium" width="24" height="24">
-							<use href="./icons/sprite.svg#mail"></use>
-						</svg>
-						<p>Електронна пошта</p>
-						<a href="mailto:info@warmthcomfort.com">info@warmthcomfort.com</a>
-					</li>
-					<li>
-						<svg class="icon-medium" width="24" height="24">
-							<use href="./icons/sprite.svg#call"></use>
-						</svg>
-						<p>Телефон</p>
-						<a href="tel:+1(555)123-4567">+1 (555) 123-4567</a>
-					</li>
-					<li>
-						<svg class="icon-medium" width="24" height="24">
-							<use href="./icons/sprite.svg#location_on"></use>
-						</svg>
-						<p>Магазин</p>
-						<address>
-							<a target="_blank" href="https://maps.app.goo.gl/iVqrU66ruNxsXjhy5">вул. Гетьмана Мазепи 15, Львів</a>
-						</address>
-					</li>
-				</ul>
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.454461475915!2d24.029514092712116!3d49.87149155537097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adc55d7f8d7bd%3A0x8ce09dcb45e8e084!2zMTUsINCy0YPQu9C40YbRjyDQk9C10YLRjNC80LDQvdCwINCc0LDQt9C10L_QuCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNzkwMDA!5e0!3m2!1sru!2spl!4v1775748383356!5m2!1sru!2spl"
-					width="600"
-					height="450"
-					style="border: 0"
-					allowfullscreen=""
-					loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"
-				></iframe>
+						<iframe
+							class="contacts-map"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.454461475915!2d24.029514092712116!3d49.87149155537097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473adc55d7f8d7bd%3A0x8ce09dcb45e8e084!2zMTUsINCy0YPQu9C40YbRjyDQk9C10YLRjNC80LDQvdCwINCc0LDQt9C10L_QuCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNC40L3QsCwgNzkwMDA!5e0!3m2!1sru!2spl!4v1775748383356!5m2!1sru!2spl"
+							width="600"
+							height="450"
+							style="border: 0"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"
+						></iframe>
+					</div>
+				</div>
 			</section>
 		</main>
-		<footer>
-			<a href="#">
-				<svg width="150" height="48">
-					<use href="./icons/icon-logo.svg"></use>
-				</svg>
-			</a>
 
-			<nav>
-				<ul>
-					<li><a href="#about">Про нас</a></li>
-					<li><a href="#advantages">Переваги</a></li>
-					<li><a href="#catalog">Каталог</a></li>
-					<li><a href="#reviews">Відгуки</a></li>
-					<li><a href="#gallery">Галерея</a></li>
-					<li><a href="#contacts">Контакти</a></li>
-				</ul>
-			</nav>
-
-			<ul>
-				<li>
-					<a href="#" aria-label="Facebook">
-						<svg class="primary-icon">
-							<use href="./icons/sprite.svg#facebook"></use>
+		<footer class="footer-section">
+			<div class="container">
+				<div class="footer-actions">
+					<a href="#">
+						<svg class="footer-logo">
+							<use href="./icons/sprite.svg#icon-logo"></use>
 						</svg>
 					</a>
-				</li>
-				<li>
-					<a href="#" aria-label="Instagram">
-						<svg class="primary-icon">
-							<use href="./icons/sprite.svg#instagram"></use>
-						</svg>
-					</a>
-				</li>
-			</ul>
+					
+					<ul class="navigation-list footer-navigation-list">
+						<li><a href="#about" class="footer-navigation-link">Про нас</a></li>
+						<li><a href="#advantages" class="footer-navigation-link">Переваги</a></li>
+						<li><a href="#catalog" class="footer-navigation-link">Каталог</a></li>
+						<li><a href="#reviews" class="footer-navigation-link">Відгуки</a></li>
+						<li><a href="#gallery" class="footer-navigation-link">Галерея</a></li>
+						<li><a href="#contacts" class="footer-navigation-link">Контакти</a></li>
+					</ul>
+		
 
-			<p>&copy; 2025 Майстерня Печей. Усі права захищені.</p>
+					<ul class="footer-socials">
+						<li>
+							<a href="https://www.facebook.com/" aria-label="Facebook">
+								<svg class="primary-icon">
+									<use href="./icons/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" aria-label="Instagram">
+								<svg class="primary-icon">
+									<use href="./icons/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<p class="footer-caption">&copy; 2025 Майстерня Печей. Усі права захищені.</p>
+			</div>
 		</footer>
 	</body>
 </html>

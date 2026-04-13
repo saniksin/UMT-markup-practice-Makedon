@@ -1,9 +1,13 @@
 :root {
-    --primary-bg: #221D1D;
-    --primary-text: #FFFFFF;
+	--primary-bg: #221d1d;
+	--primary-text: #ffffff;
 
-    /* Button */
-    --primary-button-bg: #CE4D46;
-    --primary-button-color: #A43D38;
-    --secondary-button-bg: #FFFFFF33;
+	/* Button */
+	--primary-button-bg: #ce4d46;
+	--primary-button-color: #a43d38;
+	--secondary-button-bg: #ffffff33;
+	--select-border-color: ##ffffff33;
+
+	--feedback-button-bg: #534F4F;
+	--footer-border: #ffffff26;
 }
