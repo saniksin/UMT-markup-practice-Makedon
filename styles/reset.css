@@ -18,11 +18,16 @@ ol {
 a {
     text-decoration: none;
     color: inherit;
+    outline: none;
 }
 
 select {
     color: inherit;
     background-color: transparent;
+}
+
+select, ::picker(select) {
+    appearance: base-select;
 }
 
 button {

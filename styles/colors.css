@@ -4,10 +4,16 @@
 
 	/* Button */
 	--primary-button-bg: #ce4d46;
+	--primary-button-hover-bg: #521e1c;
 	--primary-button-color: #a43d38;
 	--secondary-button-bg: #ffffff33;
-	--select-border-color: ##ffffff33;
+	--secondary-button-hover-bg: #ffffff26;
 
-	--feedback-button-bg: #534F4F;
+	--select-border-color: #ffffff33;
+	--select-focused-border-color: #dc827d;
+
+	--pagination-button-border-color: #0a04044d;
+
+	--feedback-button-bg: #534f4f;
 	--footer-border: #ffffff26;
 }
