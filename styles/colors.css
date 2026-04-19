@@ -1,19 +1,19 @@
 :root {
-	--primary-bg: #221d1d;
-	--primary-text: #ffffff;
+  --primary-bg: #221d1d;
+  --primary-text: #ffffff;
 
-	/* Button */
-	--primary-button-bg: #ce4d46;
-	--primary-button-hover-bg: #521e1c;
-	--primary-button-color: #a43d38;
-	--secondary-button-bg: #ffffff33;
-	--secondary-button-hover-bg: #ffffff26;
+  /* Button */
+  --primary-button-bg: #ce4d46;
+  --primary-button-hover-bg: #521e1c;
+  --primary-button-border-color: #a43d38;
+  --secondary-button-border-color: #ffffff33;
+  --secondary-button-hover-bg: #ffffff26;
+  --pagination-button-border-color: #0a04044d;
+  --pagination-button-bg: #534f4f;
 
-	--select-border-color: #ffffff33;
-	--select-focused-border-color: #dc827d;
+  /* Select */
+  --select-border-color: #ffffff33;
+  --select-focused-border-color: #dc827d;
 
-	--pagination-button-border-color: #0a04044d;
-
-	--feedback-button-bg: #534f4f;
-	--footer-border: #ffffff26;
+  --footer-border: #ffffff26;
 }

@@ -1,9 +1,12 @@
 :root {
-    --regular: 16px;
-    --medium: 18px;
-    --hero-title: 56px;
-    --heading: 48px;
-    --advantages-title: 32px;
-    --small: 14px;
-    --large: 20px;
+  --small: 14px;
+  --regular: 16px;
+  --medium: 18px;
+  --large: 20px;
+  --hero-title: 40px;
+  --hero-title-desktop: 56px;
+  --heading-small: 24px;
+  --heading-small-desktop: 32px;
+  --heading: 36px;
+  --heading-desktop: 48px;
 }
