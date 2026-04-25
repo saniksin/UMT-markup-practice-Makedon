@@ -221,6 +221,12 @@ body {
   background-size: cover;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/hero-bg@2x.jpg");
+  }
+}
+
 .hero-title {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 500;
@@ -254,6 +260,12 @@ body {
   mix-blend-mode: screen;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .about-section {
+    background-image: url("../images/about-bg@2x.png");
+  }
+}
+
 .main-image {
   width: 335px;
   height: 485px;
@@ -279,6 +291,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: lighten;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .advantages-section {
+    background-image: url("../images/advantages-bg@2x.png");
+  }
 }
 
 .advantages-section-title {
@@ -942,7 +960,6 @@ option::checkmark {
   /* About */
 
   .about-section {
-    background-image: url("../images/about-bg@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 100%;
