@@ -215,7 +215,7 @@ body {
 
 .hero-section {
   padding: 64px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/hero-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/hero-bg@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -248,7 +248,7 @@ body {
 /* About */
 
 .about-section {
-  background-image: url("../images/about-bg.png");
+  background-image: url("../images/about-bg@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: screen;
@@ -275,7 +275,7 @@ body {
 /* Advantage */
 
 .advantages-section {
-  background-image: url("../images/advantages-bg.png");
+  background-image: url("../images/advantages-bg@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   mix-blend-mode: lighten;
@@ -942,7 +942,7 @@ option::checkmark {
   /* About */
 
   .about-section {
-    background-image: url("../images/about-bg.png");
+    background-image: url("../images/about-bg@1x.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1440px 100%;
