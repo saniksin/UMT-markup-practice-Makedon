@@ -16,4 +16,7 @@
   --select-focused-border-color: #dc827d;
 
   --footer-border: #ffffff26;
+  --modal-bg: #00000040;
+  --input-placeholder: #ffffff99;
+  --input-focused-border: #f5dbda;
 }
