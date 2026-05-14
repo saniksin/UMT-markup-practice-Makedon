@@ -6,63 +6,97 @@ const orderModal = document.getElementById("order-modal");
 const orderButtons = document.querySelectorAll("#order-button");
 const orderModalForm = document.getElementById("order-modal-form");
 
-function toggleDetailModal() {
-  detailModal.classList.toggle("is-open");
-  document.body.classList.toggle("modal-open");
+function syncModalOpenState() {
+  const anyModalOpen = detailModal.classList.contains("is-open") || orderModal.classList.contains("is-open");
+
+  document.body.classList.toggle("modal-open", anyModalOpen);
+  document.documentElement.classList.toggle("modal-open", anyModalOpen);
 }
 
-function toggleOrderModal() {
-  orderModal.classList.toggle("is-open");
-  document.body.classList.toggle("modal-open");
+function isOverlayScrollLockActive() {
+  const html = document.documentElement;
+  return html.classList.contains("modal-open") || html.classList.contains("menu-open");
 }
 
-function closeDetailModal() {
-  detailModal.classList.remove("is-open");
-  document.body.classList.remove("modal-open");
+function trapScrollBehindOverlays(event) {
+  if (!isOverlayScrollLockActive()) {
+    return;
+  }
+  if (event.target.closest(".modal-container") || event.target.closest("[data-menu]")) {
+    return;
+  }
+  event.preventDefault();
+}
+
+document.addEventListener("touchmove", trapScrollBehindOverlays, { passive: false });
+document.addEventListener("wheel", trapScrollBehindOverlays, { passive: false });
+
+function openDetailModal() {
+  detailModal.classList.add("is-open");
+  syncModalOpenState();
+}
+
+function openOrderModal() {
+  orderModal.classList.add("is-open");
+  syncModalOpenState();
 }
 
 function closeOrderModal() {
   orderModal.classList.remove("is-open");
-  document.body.classList.remove("modal-open");
+  syncModalOpenState();
+  orderModalForm.reset();
 }
 
-catalogueList.addEventListener("click", (e) => {
-  if (e.target.id === "catalogue-more-button") {
-    const parentItem = e.target.closest(".catalogue-list-item");
+function closeDetailModal() {
+  detailModal.classList.remove("is-open");
+  syncModalOpenState();
+}
 
-    const title = parentItem.querySelector(".catalogue-item-title").textContent;
-    const price = parentItem.querySelector(".catalogue-item-price").textContent;
-    const text = parentItem.querySelector(".catalogue-item-text").textContent;
+function buildDetailModalMarkup() {
+  const markup = `
+    <img class="detail-modal-image" alt="">
+    <div class="detail-modal-texts-block">
+      <h3 class="detail-modal-title"></h3>
+      <p class="detail-modal-price"></p>
+      <p class="detail-modal-text"></p>
+      <button type="button" id="detail-modal-cta" class="primary-button detail-modal-button">Придбати</button>
+    </div>`;
+  return markup;
+}
 
-    const imgElement = parentItem.querySelector(".catalogue-item-image");
-    const src = imgElement.getAttribute("src");
-    const srcset = imgElement.getAttribute("srcset");
+function openDetailModalFromCatalogueItem(parentItem) {
+  const title = parentItem.querySelector(".catalogue-item-title").textContent;
+  const price = parentItem.querySelector(".catalogue-item-price").textContent;
+  const descriptionFromCard = parentItem.querySelector(".catalogue-item-text").textContent;
+  const imgElement = parentItem.querySelector(".catalogue-item-image");
+  const src = imgElement.getAttribute("src");
+  const rawSrcset = imgElement.getAttribute("srcset");
 
-    const markup = `
-            <img
-              class="detail-modal-image"
-              src="${src}"
-              srcset="${srcset}"
-              alt="${title}"
-            />
-            <div class="detail-modal-texts-block">
-              <h3 class="detail-modal-title">${title}</h3>
-              <p class="detail-modal-price">${price}</p>
-              <p class="detail-modal-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti laboriosam nulla, repellat
-                labore ipsam eveniet, enim non officia iusto esse vel sit accusamus alias fugiat amet fugit, maxime
-                iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, inventore quisquam? Earum,
-                numquam aliquam eaque consequatur corrupti facere, nulla eum culpa sequi doloribus quibusdam quasi
-                laboriosam provident dignissimos molestias fugiat.
-              </p>
-              <button id="detail-modal-cta" type="button" class="primary-button detail-modal-button">Придбати</button>
-            </div>`;
+  detailModalContent.replaceChildren();
+  detailModalContent.insertAdjacentHTML("beforeend", buildDetailModalMarkup());
 
-    detailModalContent.innerHTML = "";
-    detailModalContent.insertAdjacentHTML("afterbegin", markup);
-
-    toggleDetailModal();
+  const detailImage = detailModalContent.querySelector(".detail-modal-image");
+  detailImage.src = src;
+  if (rawSrcset) {
+    detailImage.setAttribute("srcset", rawSrcset);
   }
+  detailImage.alt = title;
+
+  detailModalContent.querySelector(".detail-modal-title").textContent = title;
+  detailModalContent.querySelector(".detail-modal-price").textContent = price;
+  detailModalContent.querySelector(".detail-modal-text").textContent = descriptionFromCard;
+
+  openDetailModal();
+}
+
+catalogueList?.addEventListener("click", (event) => {
+  const detailsTrigger = event.target.closest(".catalogue-more-button");
+  if (!detailsTrigger) {
+    return;
+  }
+
+  const parentItem = detailsTrigger.closest(".catalogue-list-item");
+  openDetailModalFromCatalogueItem(parentItem);
 });
 
 closeButtons.forEach((button) => {
@@ -86,14 +120,14 @@ orderModal.addEventListener("click", (e) => {
 
 detailModalContent.addEventListener("click", (e) => {
   if (e.target.id === "detail-modal-cta" || e.target.closest("#detail-modal-cta")) {
-    toggleDetailModal();
-    toggleOrderModal();
+    closeDetailModal();
+    openOrderModal();
   }
 });
 
 orderButtons.forEach((button) =>
   button.addEventListener("click", () => {
-    toggleOrderModal();
+    openOrderModal();
   })
 );
 
